@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>  
+    <groupId>eu.agilejava</groupId>  
+    <artifactId>snoopee-health</artifactId>  
+    <version>1.0.0-SNAPSHOT</version>  
+    <packaging>jar</packaging>  
+    
+    <name>SnoopEE Health</name>  
+    <description>SnoopEE - A MicroProfile Health implementation for Jakarta EE</description>  
+    
+    <url>http://snoopee.agilejava.eu</url>  
+    
+    <licenses>
+        <license>
+            <name>EPL-2.0</name>
+            <url>http://www.eclipse.org/legal/epl-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>  
+    
+    <developers> 
+        <developer> 
+            <name>Ivar Grimstad</name>  
+            <email>ivar.grimstad@gmail.com</email>  
+            <organization>AgileJava</organization>  
+            <organizationUrl>http://www.agilejava.eu</organizationUrl> 
+        </developer> 
+    </developers> 
+     
+    <properties> 
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.release>11</maven.compiler.release>
+    </properties> 
+     
+    <distributionManagement> 
+        <repository> 
+            <id>ossrh</id>  
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url> 
+        </repository>  
+        <snapshotRepository> 
+            <id>ossrh</id>  
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url> 
+        </snapshotRepository> 
+    </distributionManagement>  
+    
+    <scm> 
+        <connection>scm:git:ssh://git@github.com:snoopee/snoopee-health.git</connection>  
+        <developerConnection>scm:git:ssh://git@github.com:snoopee/snoopee-health.git</developerConnection>  
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.microprofile.health</groupId>
+            <artifactId>microprofile-health-api</artifactId>
+            <version>3.0</version>
+        </dependency>
+    </dependencies>
+
+</project>
